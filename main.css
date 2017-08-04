@@ -1,0 +1,64 @@
+body{
+  text-align: center;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  background: #75262a; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#470b15, #75262a); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#470b15, #75262a); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#470b15, #75262a); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#470b15, #75262a); /* Standard syntax (must be last) */
+}
+a {
+  text-decoration: none;
+  color: #d4f8ff;
+}
+a:hover{
+  color: rgb(250, 245, 105);
+}
+header{
+  margin: 40px 0 40px 0;
+}
+h1, h2, h3{
+  font-family: 'Josefin Slab', serif;
+}
+header h1{
+  font-size: 4em;
+  margin: 0;
+}
+header h2{
+  font-size: 1.4em;
+  margin-top: -0.4em;
+  margin-left: 114px;
+}
+section{
+  margin: 25px;
+}
+footer{
+  margin: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  body{
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 530px) {
+  header h2{
+    margin-top: 5px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 420px){
+  header h1{
+    font-size: 3em;
+    margin: 0;
+    margin-bottom: -.3em;
+  }
+  header h2{
+    font-size: 1.4em;
+    padding: 0;
+    margin-top: 14px;
+  }
+}
