@@ -5,9 +5,10 @@ $(document).ready(function(){
 
   // display users & status
   // example: https://wind-bow.glitch.me/twitch-api/users/pioslabs
-  var apiUser = "freecodecamp";
-
-  getUserData(apiUser);
+  for(let i=0; i<users.length; i++){
+    var apiUser = users[i];
+    getUserData(apiUser);
+  }
 
   // display stream data for eligible streamers
   // example: https://wind-bow.glitch.me/twitch-api/streams/shortyyguy
@@ -18,7 +19,7 @@ function getUserData(user){
   // check if user actually exists
   $.getJSON('https://wind-bow.glitch.me/twitch-api/users/'+user+'?callback=?', function(data) {
     //console.log(data); // debug
-    if(data.hasOwnProperty("error")){
+    if(data.hasOwnProperty("error")||!data.bio){
       console.log("User " + user + " not found.")//debug
     }
     else{
