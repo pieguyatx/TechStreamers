@@ -76,6 +76,9 @@ section{
 #results .heading>div{
   background: mediumblue;
 }
+#results .container .row:nth-child(2n+1) > div{
+  background: midnightblue;
+}
 #results .userData>div{
   background: darkblue;
 }
