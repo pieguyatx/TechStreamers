@@ -47,9 +47,22 @@ section{
   display: flex;
   flex-wrap: nowrap;
 }
-#results .heading{
-  padding: 20px;
-  background: mediumblue;
+#results .row>div{
+  padding: 10px;
+  margin: 5px 0 5px 0;
+}
+#results .row div:first-child{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#results .row div:nth-child(2){
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: 1px;
 }
 #results .user{
   width: 30%;
@@ -57,14 +70,17 @@ section{
 #results .info{
   width: 70%;
 }
-#results .userData{
-  padding: 5px;
-  margin: 3px;
-  background: darkblue;
-  margin: 5px 0 5px 0;
+#results .heading{
+  font-weight: bold;
 }
-#results .userData:hover{
-  background-color: black;
+#results .heading>div{
+  background: mediumblue;
+}
+#results .userData>div{
+  background: darkblue;
+}
+#results .userData .info{
+  text-align: left;
 }
 /* format table (above) */
 footer{
