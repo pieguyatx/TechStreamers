@@ -6,12 +6,17 @@ $(document).ready(function(){
   // display users & status
   // example: https://wind-bow.glitch.me/twitch-api/users/pioslabs
   var apiUser = "freecodecamp";
-  $.getJSON('https://wind-bow.glitch.me/twitch-api/users/'+apiUser+'?callback=?', function(data) {
-    console.log(data);
-  });
 
+  getUserData(apiUser);
 
   // display stream data for eligible streamers
   // example: https://wind-bow.glitch.me/twitch-api/streams/shortyyguy
 
 });
+
+function getUserData(user){
+  $.getJSON('https://wind-bow.glitch.me/twitch-api/users/'+user+'?callback=?', function(data) {
+    console.log(data); // debug
+    $("#results").append(data.bio);// debug
+  });
+}
