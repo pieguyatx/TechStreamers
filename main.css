@@ -33,6 +33,26 @@ header h2{
 section{
   margin: 25px;
 }
+#results{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#results table{
+  width: 80%;
+  text-align: center;
+}
+#results table tr{
+  background: darkblue;
+  margin: 5px 0 5px 0;
+}
+#results table td{
+  padding: 5px;
+  margin: 3px;
+}
+#results table tr:hover{
+  background-color: black;
+}
 footer{
   margin: 20px;
   font-family: 'Oxygen', sans-serif;
