@@ -22,10 +22,10 @@ function getUserData(user){
       console.log("User " + user + " not found.")//debug
     }
     else{
-      var output = '<tr class="row"><td class="user">%USER%</td><td class="bio">%BIO%</td></tr>';
+      var output = '<div class="userData"><div class="user">%USER%</div><div class="info">%BIO%</div></div>';
       output = output.replace("%USER%",data.display_name);
       output = output.replace("%BIO%",data.bio);
-      $("#results table").append(output);// debug
+      $("#results .container").append(output);// debug
       console.log(output); // debug
     }
   });

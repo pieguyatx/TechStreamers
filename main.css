@@ -38,21 +38,35 @@ section{
   align-items: center;
   justify-content: center;
 }
-#results table{
+/* Format table below*/
+#results div.container{
   width: 80%;
   text-align: center;
 }
-#results table tr{
+#results div.container>div{
+  display: flex;
+  flex-wrap: nowrap;
+}
+#results .heading{
+  padding: 20px;
+  background: mediumblue;
+}
+#results .user{
+  width: 30%;
+}
+#results .info{
+  width: 70%;
+}
+#results .userData{
+  padding: 5px;
+  margin: 3px;
   background: darkblue;
   margin: 5px 0 5px 0;
 }
-#results table td{
-  padding: 5px;
-  margin: 3px;
-}
-#results table tr:hover{
+#results .userData:hover{
   background-color: black;
 }
+/* format table (above) */
 footer{
   margin: 20px;
   font-family: 'Oxygen', sans-serif;
