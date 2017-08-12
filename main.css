@@ -51,7 +51,7 @@ section{
   padding: 10px;
   margin: 5px 0 5px 0;
 }
-#results .row div:first-child{
+#results .row>div:first-child{
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   margin-right: 1px;
@@ -59,7 +59,7 @@ section{
   align-items: center;
   justify-content: center;
 }
-#results .row div:nth-child(2){
+#results .row>div:nth-child(2){
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-left: 1px;
@@ -83,7 +83,30 @@ section{
   background: darkblue;
 }
 #results .userData .info{
+  display: flex;
+  flex-wrap: nowrap;
+}
+#results .userData .bio{
   text-align: left;
+  width: 100%;
+}
+.status{
+  padding: 5px;
+  border-radius: 3px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.streaming{
+  color: #19ff28;
+  font-weight: bold;
+  background: #0c6d12;
+}
+.offline{
+  color: gray;
+  font-style: italic;
+  background: #494949;
 }
 /* format table (above) */
 footer{
