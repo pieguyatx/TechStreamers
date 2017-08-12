@@ -76,11 +76,15 @@ section{
 #results .heading>div{
   background: mediumblue;
 }
-#results .container .userData:nth-child(2n+1) > div{
+#results .userData:nth-child(2n+1) > div{
   background: midnightblue;
 }
 #results .userData>div{
   background: darkblue;
+}
+#results .userData:hover .user,
+#results .userData:hover .info {
+  background: black;
 }
 #results .userData .info{
   display: flex;
