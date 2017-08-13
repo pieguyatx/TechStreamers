@@ -172,7 +172,7 @@ footer{
   #results .userData .info a div{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: inherit;
     align-items: center;
   }
 }
