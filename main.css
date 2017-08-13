@@ -95,6 +95,11 @@ section{
 #results .userData .bio{
   text-align: left;
   width: 100%;
+  margin: 10px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .status{
   padding: 5px;
@@ -123,6 +128,10 @@ section{
   border: 3px outset #5d018e;
   font-style: italic;
 }
+.preview img{
+  width: 100%;
+  max-width: 320px;
+}
 .preview p{
   padding: 10px;
 }
@@ -133,9 +142,23 @@ footer{
 }
 
 /* Mobile responsiveness */
+@media only screen and (min-width: 1060px) {
+  .preview img{
+    width: 50%;
+  }
+  #results .userData .info a div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 768px) {
   body{
     margin: 0;
+  }
+  #results .userData .info>div{
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 530px) {

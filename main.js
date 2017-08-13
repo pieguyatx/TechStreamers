@@ -39,7 +39,8 @@ function getStreamData(user){
       // display info about what's streaming
       var streamImg = data.stream.preview.medium;
       var streamStatus = data.stream.channel.status;
-      output = '<div class="preview"><img src="'+streamImg+'"><p>'+streamStatus+'</p></div>';
+      var link = data.stream.channel.url;
+      output = '<a href="'+link+'" target="_blank" title="Link to stream (opens in new window)"><div class="preview"><img src="'+streamImg+'" alt="Preview of stream"><p>'+streamStatus+'</p></div></a>';
       $("#"+user+" .info").append(output);
     } // if not, indicate offline
     else {
