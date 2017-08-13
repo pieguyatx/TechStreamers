@@ -2,11 +2,7 @@ body{
   text-align: center;
   color: white;
   font-family: 'Muli', sans-serif;
-  background: #75262a; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#470b15, #75262a); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#470b15, #75262a); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#470b15, #75262a); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#470b15, #75262a); /* Standard syntax (must be last) */
+  background: #000630;
 }
 a {
   text-decoration: none;
@@ -76,6 +72,9 @@ section{
 #results .heading>div{
   background: mediumblue;
 }
+#results .userData .user{
+  font-size: 1.5em;
+}
 #results .userData:nth-child(2n+1) > div{
   background: midnightblue;
 }
@@ -131,6 +130,7 @@ section{
 .preview img{
   width: 100%;
   max-width: 320px;
+  border: solid 1px black;
 }
 .preview p{
   padding: 10px;
