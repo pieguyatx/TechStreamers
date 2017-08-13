@@ -86,9 +86,11 @@ section{
 #results .userData:hover .info {
   background: black;
 }
-#results .userData .info{
+#results .userData .info>div{
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 #results .userData .bio{
   text-align: left;
@@ -96,9 +98,10 @@ section{
 }
 .status{
   padding: 5px;
-  margin: 0 10px 0 10px;
+  margin: 10px;
   border-radius: 3px;
   width: 100px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,8 +113,18 @@ section{
 }
 .offline{
   color: gray;
-  font-style: italic;
   background: #494949;
+}
+.preview{
+  margin: 10px;
+  padding: 10px;
+  background: #3b005b;
+  border-radius: 10px;
+  border: 3px outset #5d018e;
+  font-style: italic;
+}
+.preview p{
+  padding: 10px;
 }
 /* format table (above) */
 footer{

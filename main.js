@@ -17,7 +17,7 @@ function getUserData(user){
       console.log("User " + user + " not found.")//debug
     }
     else{ // if user exists, display info
-      var output = '<div class="row userData" id="'+user+'"><div class="user">%USER%</div><div class="info"><div class="bio">%BIO%</div><div class="status"></div></div></div>';
+      var output = '<div class="row userData" id="'+user+'"><div class="user">%USER%</div><div class="info"><div><div class="bio">%BIO%</div><div class="status"></div></div></div></div>';
       output = output.replace("%USER%",data.display_name);
       output = output.replace("%BIO%",data.bio);
       $("#results .container").append(output);// debug
@@ -36,6 +36,11 @@ function getStreamData(user){
       console.log(data["_links"].self); // debug
       let output = "Streaming now!";
       $("#"+user+" .status").html(output).addClass("streaming");
+      // display info about what's streaming
+      var streamImg = data.stream.preview.medium;
+      var streamStatus = data.stream.channel.status;
+      output = '<div class="preview"><img src="'+streamImg+'"><p>'+streamStatus+'</p></div>';
+      $("#"+user+" .info").append(output);
     } // if not, indicate offline
     else {
       let output = "Offline";
