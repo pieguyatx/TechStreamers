@@ -96,6 +96,7 @@ section{
 }
 .status{
   padding: 5px;
+  margin: 0 10px 0 10px;
   border-radius: 3px;
   width: 100px;
   display: flex;
