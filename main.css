@@ -16,6 +16,7 @@ header{
   margin: 0;
   padding: 40px 0 40px 0;
   background: black;
+  color: #95ff95;
 }
 h1, h2, h3{
   font-family: 'Audiowide', cursive;
@@ -37,6 +38,7 @@ section{
 #intro p{
   width: 80%;
   text-align: left;
+  margin: 25px 0 25px 0;
 }
 /* Format table below*/
 #results div.container{
@@ -78,6 +80,16 @@ section{
 }
 #results .userData .user{
   font-size: 1.5em;
+  /* Deal with long links */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 #results .userData:nth-child(2n+1) > div{
   background: #110e7f;
@@ -149,6 +161,7 @@ section{
 footer{
   margin: 20px;
   font-family: 'Oxygen', sans-serif;
+  color: #95ff95;
 }
 
 /* Mobile responsiveness */
@@ -167,25 +180,41 @@ footer{
   body{
     margin: 0;
   }
+  #intro p{
+    width: 100%;
+    margin: 0;
+  }
+  #results div.container{
+    width: 100%;
+  }
   #results .userData .info>div{
     flex-wrap: wrap;
   }
-}
-@media only screen and (max-width: 530px) {
-  header h2{
-    margin-top: 5px;
-    margin-left: 0;
+  .status{
+    height: auto;
   }
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 620px) {
+  header{
+    padding: 20px 0 20px 0;
+  }
   header h1{
     font-size: 3em;
-    margin: 0;
-    margin-bottom: -.3em;
   }
   header h2{
-    font-size: 1.4em;
-    padding: 0;
-    margin-top: 14px;
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 500px){
+  header{
+    padding: 25px;
+  }
+  header h1{
+    line-height: 0.8em;
+    margin-bottom: 10px;
+  }
+  header h2{
+    width: 250px;
+    margin: 0 auto 0 auto;
   }
 }
