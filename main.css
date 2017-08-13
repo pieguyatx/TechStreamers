@@ -99,9 +99,15 @@ section{
   text-align: left;
   width: 100%;
   margin: 10px;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
+  /* Deal with long links */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
   -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto;
 }
 .status{
