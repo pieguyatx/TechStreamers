@@ -3,6 +3,7 @@ body{
   color: white;
   font-family: 'Muli', sans-serif;
   background: #000630;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -12,10 +13,12 @@ a:hover{
   color: rgb(250, 245, 105);
 }
 header{
-  margin: 40px 0 40px 0;
+  margin: 0;
+  padding: 40px 0 40px 0;
+  background: black;
 }
 h1, h2, h3{
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Audiowide', cursive;
 }
 header h1{
   font-size: 4em;
@@ -24,15 +27,16 @@ header h1{
 header h2{
   font-size: 1.4em;
   margin-top: -0.4em;
-  margin-left: 114px;
 }
 section{
   margin: 25px;
-}
-#results{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#intro p{
+  width: 80%;
+  text-align: left;
 }
 /* Format table below*/
 #results div.container{
@@ -76,10 +80,10 @@ section{
   font-size: 1.5em;
 }
 #results .userData:nth-child(2n+1) > div{
-  background: midnightblue;
+  background: #110e7f;
 }
 #results .userData>div{
-  background: darkblue;
+  background: #00006c;
 }
 #results .userData:hover .user,
 #results .userData:hover .info {
