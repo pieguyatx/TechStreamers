@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // get Twitch data
-  var users = ["adafruit", "ESL_SC2", "freecodecamp", "storbeck", "habathcx", "noobs2ninjas", "pioslabs"]
+  var users = ["adafruit", "awesomeallar", "noopkat", "freecodecamp", "lonmakes", "neorealms", "noobs2ninjas", "pioslabs"]
   // display users & status
   // example: https://wind-bow.glitch.me/twitch-api/users/pioslabs
   for(let i=0; i<users.length; i++){
