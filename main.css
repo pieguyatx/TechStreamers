@@ -144,9 +144,9 @@ section{
 .preview{
   margin: 10px;
   padding: 10px;
-  background: #3b005b;
+  background: #200062;
   border-radius: 10px;
-  border: 3px outset #5d018e;
+  border: 3px outset #1f087b;
   font-style: italic;
 }
 .preview img{
@@ -216,5 +216,23 @@ footer{
   header h2{
     width: 250px;
     margin: 0 auto 0 auto;
+  }
+  #results div.container .userData{
+    flex-wrap: wrap;
+  }
+  #results div.container .userData>div{
+    width: 100%;
+  }
+  #results div.container .userData>.user{
+    margin-bottom: 0;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    padding-bottom: 0;
+  }
+  #results div.container .userData>.info{
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    padding-top: 0;
   }
 }
